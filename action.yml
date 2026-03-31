@@ -52,6 +52,9 @@ inputs:
   cache-db:
     description: "Cache the Grype DB in GitHub action cache and restore before checking for updates"
     required: false
+  verify-sign:
+    description: "Verify binary signature"
+    required: false
 outputs:
   sarif:
     description: "Path to a SARIF report file for the scan"
